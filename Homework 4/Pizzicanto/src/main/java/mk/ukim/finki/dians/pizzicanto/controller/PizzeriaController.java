@@ -11,7 +11,7 @@ import java.util.Optional;
 import java.util.Random;
 
 @Controller
-@RequestMapping(value = "/Pizzicanto")
+@RequestMapping({"/","/Pizzicanto"})
 public class PizzeriaController {
     private final PizzeriaService pizzeriaService;
 
@@ -19,7 +19,7 @@ public class PizzeriaController {
         this.pizzeriaService = pizzeriaService;
     }
 
-    @GetMapping
+    @GetMapping()
     public String getHomepage(Model model,HttpServletRequest req) {
         //checks if RANDOM button was clicked
         Pizzeria rPizzeria=(Pizzeria) req.getSession().getAttribute("RPizzeria");
