@@ -4,3 +4,5 @@
  Dimitar Pavlovski 201517 |
  Matej Gorjanov 201536 |
  Timothy Juzevski 201546
+
+ Software architecture and design project
